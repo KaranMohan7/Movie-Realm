@@ -1,8 +1,8 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
-import movie from "./Reducers/movieSlice";
-import tv from "./Reducers/tvSlice";
-import people from "./Reducers/peopleSlice";
-import bookmark from "./Reducers/bookmarkSlice";
+import movie from "../Reducers/movieSlice";
+import tv from "../Reducers/tvSlice";
+import people from "../Reducers/peopleSlice";
+import bookmark from "../Reducers/bookmarkSlice";
 import storage from 'redux-persist/lib/storage';
 import { persistReducer, persistStore } from "redux-persist";
 
