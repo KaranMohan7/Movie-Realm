@@ -32,7 +32,7 @@ const Navbar = () => {
         <input
           onChange={(e) => setinput(e.target.value)}
           value={input}
-          className="w-[40vw] p-2 rounded-md bg-transparent border border-zinc-500  outline-none text-sm text-black  "
+          className="w-[40vw] text-base p-2 rounded-md bg-transparent border border-zinc-500  outline-none  text-black  "
           type="text"
           placeholder="Search anything"
         />
