@@ -1,6 +1,6 @@
 import React from "react";
 import image from "../../assets/Pictures/no-image.png";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { adddataMain, removedataMain, toggle } from "../../Store/Reducers/bookmarkSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
