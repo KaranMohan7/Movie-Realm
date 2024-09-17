@@ -32,7 +32,7 @@ const Navbar = () => {
         <input
           onChange={(e) => setinput(e.target.value)}
           value={input}
-          className="w-[40vw] text-base p-2 rounded-md bg-transparent border border-zinc-500  outline-none  text-black  "
+          className="w-[40vw] text-base p-2 rounded-md bg-transparent border border-zinc-500 outline-none  text-black  "
           type="text"
           placeholder="Search anything"
         />
@@ -40,7 +40,7 @@ const Navbar = () => {
           <i onClick={() => setinput("")} className="ri-close-line text-xl"></i>
         )}
       </div>
-      <div className=" w-[40vw] absolute max-h-[50vh] top-[100%] overflow-auto backdrop-blur-md ml-7">
+      <div className=" w-[40vw] absolute max-h-[50vh] top-[100%] z-[100]  overflow-auto backdrop-blur-md ml-7">
         {queryshow ? (
           queryshow.map((item, index) => (
             <Link

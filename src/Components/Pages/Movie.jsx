@@ -48,7 +48,7 @@ const Movie = () => {
               class="ri-arrow-left-line text-lg lg:text-xl"
             ></i>
             <p className="text-lg lg:text-xl xl:text-2xl font-semibold capitalize">
-             Movies - <span className='text-xs lg:text-sm'>({category})</span>
+             Movies -<span className='text-xs'>({category})</span>
             </p>
           </div>
           <div>

@@ -19,7 +19,7 @@ const Movie = () => {
         const data = await FetchData(
           `https://api.themoviedb.org/3/person/${category}?page=${page}`
         );
-   console.log(data.results)
+
         if(data.results.length > 0){
           setpeople((prev) => [...prev, ...data.results]);
           setpage(page + 1);
@@ -47,8 +47,8 @@ const Movie = () => {
               onClick={() => navigate(-1)}
               class="ri-arrow-left-line text-lg lg:text-xl"
             ></i>
-            <p className="text-lg lg:text-2xl xl:text-xl font-semibold capitalize">
-             Peoples - <span className='text-xs lg:text-sm'>({category})</span>
+            <p className="text-sm lg:text-xl xl:text-xl font-semibold capitalize">
+             Peoples -<span className='text-xs'>({category})</span>
             </p>
           </div>
           <div>
