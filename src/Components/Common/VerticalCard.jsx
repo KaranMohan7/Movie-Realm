@@ -32,9 +32,9 @@ const VerticalCard = ({ item,movie,tv }) => {
       >
         <img
           className="w-80 h-80  lg:w-[20rem] lg:h-[24rem] xl:w-[20rem] xl:h-[24rem] rounded-lg object-cover "
-          src={`https://image.tmdb.org/t/p/original${
-            item.backdrop_path || item.profile_path || image
-          }`}
+          src={ item.backdrop_path || item.profile_path ? `https://image.tmdb.org/t/p/original${
+            item.backdrop_path || item.profile_path 
+          }`: image}
         />
       </Link>
       <div className="flex items-center justify-between">

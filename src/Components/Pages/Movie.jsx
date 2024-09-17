@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import FetchData from '../../Utils/FetchData';
 import VerticalCard from "../Common/VerticalCard";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { Link} from "react-router-dom";
 import Navbar from "../Navbar";
 import Dropdown from "../Common/Dropdown";
 import Loading from '../Loading'

@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Loading from "./Loading";
 import Card from "./Common/Card";
+import image from '../assets/Pictures/no-image.png'
 
 const Tvdetails = () => {
   const { data } = useSelector((state) => state.tv);
@@ -62,7 +63,7 @@ const Tvdetails = () => {
         <img
           className=" w-80 h-96 object-cover ml-4 md:ml-0 lg:ml-0  "
           src={`https://image.tmdb.org/t/p/original${
-            data.details.poster_path || data.details.backdrop_path
+            data.details.poster_path || data.details.backdrop_path 
           }`}
         ></img>
         <div className=" p-4 md:p-7 lg:p-11">
@@ -131,8 +132,8 @@ const Tvdetails = () => {
                 <img
                   className="rounded-md w-96 h-96 object-cover"
                   src={
-                    item.poster_path &&
-                    `https://image.tmdb.org/t/p/original${item.poster_path}`
+                    item.poster_path ?
+                    `https://image.tmdb.org/t/p/original${item.poster_path}`: image
                   }
                 />
                 <h1 className="text-lg text-center text-white font-semibold ">
