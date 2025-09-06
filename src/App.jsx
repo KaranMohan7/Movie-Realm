@@ -15,6 +15,7 @@ import About from "./Components/Pages/About";
 import Bookmarks from "./Components/Bookmarks";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import Contact from "./Components/Pages/Contact";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/about" element={<About />}></Route>
 
         <Route path="*" element={<Notfound />}></Route>
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </div>
   );

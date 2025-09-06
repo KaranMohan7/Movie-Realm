@@ -44,10 +44,10 @@ const Sidebar = () => {
             <i className="ri-information-fill text-xl"></i>
             <p className="hidden md:block">About</p>
           </Link>
-          <a target="__blank" href="https://www.linkedin.com/in/karan-mohan-talwar-aaa731295/" className="flex mb-7 lg:mb-5 ml-3 md:ml-10 lg:ml-10 items-center gap-3 text-xs lg:text-lg hover:bg-black hover:text-white p-1 lg:p-[10px] rounded-xl">
+          <Link  className="flex mb-7 lg:mb-5 ml-3 md:ml-10 lg:ml-10 items-center gap-3 text-xs lg:text-lg hover:bg-black hover:text-white p-1 lg:p-[10px] rounded-xl">
             <i className="ri-phone-fill text-xl"></i>
             <p className="hidden md:block">Contact Us</p>
-          </a>
+          </Link>
         </div>
       </div>
     </>
